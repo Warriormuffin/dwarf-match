@@ -1,6 +1,6 @@
 <div class="container-fluid">
         <div class="row">
-            <h1>Found Pairs: {{$ctrl.pairs}}</h1>
+            <h1>Found Pairs: {{$ctrl.totalMatches}}</h1>
         </div>
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
@@ -19,6 +19,7 @@
 
                 <div class="alert alert-success" ng-show="$ctrl.victory">
                     <h1>You are victorious, However it took you a ridiculous {{$ctrl.attempts}} attempts to win. Perhaps you should focus on your memory rather than drinking <a href="http://freedrinkpubs.co.uk/register" target="_blank">Claim your free Pint</a></h1>
+                    <button type="button" class="btn btn-danger" ng-click="$ctrl.resetGame()">Play the Game Again</button>
                 </div>
 
             </div>
